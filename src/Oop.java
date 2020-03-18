@@ -10,8 +10,8 @@ public class Oop {
         Animal[] animals = new Animal[]{cat, dog, cat1};
         Oop street = new Oop();
         street.fight(animals);
-
-        ((Dog)dog).killedAnimals.forEach(a -> System.out.println(a));
+        System.out.println("result");
+        ((Dog)dog).getKilledAnimals().forEach(a -> System.out.println(a.getName()));
 
 
 
