@@ -1,5 +1,4 @@
-
-
+import java.util.ArrayList;
 
 public class Oop {
     public static void main(String[] args) {
@@ -8,12 +7,13 @@ public class Oop {
         Animal dog = new Dog("Buch");
         Animal cat1 = new Cat("Murka");
         Dog dogS = new Dog();
-
         Animal[] animals = new Animal[]{cat, dog, cat1};
-
         Oop street = new Oop();
         street.fight(animals);
- //       (Dog)dog.
+
+        ((Dog)dog).killedAnimals.forEach(a -> System.out.println(a));
+
+
 
     }
 
@@ -28,10 +28,5 @@ public class Oop {
                 }
             }
         }
-
-
-
     }
-
-
 }

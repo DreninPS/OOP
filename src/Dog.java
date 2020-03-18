@@ -1,35 +1,26 @@
 import java.util.ArrayList;
-
 public class Dog extends Animal {
-
+    int killedCats;
+    ArrayList killedAnimals = new ArrayList<Animal>();
 
     public void fas (Animal animal) {
-
         killedCats++;
-        System.out.println("Vseh porvu!!!! "+animal.name+" Killed");
-        list.add(animal);
-        animal.name = "killed";
+        System.out.println("Vseh porvu!!!! "+animal.getName()+" Killed");
+        killedAnimals.add(animal);
+        animal.setName("killed");
     }
-
     @Override
     public void voice (){
-        System.out.println("GaVVVV");
+        System.out.println("Gav Gav");
     }
-
-    int killedCats;
-    ArrayList list = new ArrayList<Animal>();
-
     public int getKilledCats() {
         return killedCats;
     }
-
-    public ArrayList getList() {
-        return list;
+    public ArrayList getKilledAnimals() {
+        return killedAnimals;
     }
-
     public Dog() {
     }
-
     public Dog(String name) {
         super(name);
     }
